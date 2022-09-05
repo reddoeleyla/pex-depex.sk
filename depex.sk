@@ -1,0 +1,16 @@
+command /depex [<offline player>]:
+    permission: sk.depex
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make console execute command "/lp user %arg 1% parent set default"
+        send "&c%arg 1% &7è stato depexato da &a%player%"
+
+
+
+
+command /pex [<offline player>] [<offline player>]:
+    permission: sk.pex
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make console execute command "/lp user %arg 1% parent set %arg 2%"
+        sned "&c%arg 1% &7è stato pexato &b%arg 2% &7da &a%player%"
